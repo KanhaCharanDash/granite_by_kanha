@@ -1,0 +1,7 @@
+
+>> task.reload
+Task Load (0.3ms)  SELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = ? LIMIT ?  [["id", 1], ["LIMIT", 1]]
+=> #<Task id: 1, title: "My first task", created_at: "2020-03-30 08:55:09", updated_at: "2020-04-03 09:01:42">
+
+exit
+
