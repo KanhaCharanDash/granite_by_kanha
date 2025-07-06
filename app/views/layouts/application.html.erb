@@ -6,10 +6,12 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-  
+
   </head>
 
   <body>
     <%= yield %>
+        <%= render "shared/bundle", entrypoint: "application" %>
+
   </body>
 </html>
