@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source "https://rubygems.org"
 
 ruby "3.3.5"
@@ -6,7 +8,6 @@ ruby "3.3.5"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
 
 gem "responders"
-
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
@@ -19,10 +20,6 @@ gem "puma", ">= 5.0"
 
 # Bundle and transpile JavaScript [https://github.com/rails/jsbundling-rails]
 gem "jsbundling-rails"
-
-
-
-
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
@@ -67,4 +64,22 @@ group :test do
   gem "selenium-webdriver"
 end
 
-gem 'react-rails', "~> 2.7.1"
+gem "react-rails", "~> 2.7.1"
+
+# previous gems as it was
+
+group :development, :test do
+  # previous gems under this group as it was
+
+  # For code formatting and linting
+  gem "rubocop", require: false
+  gem "rubocop-rails", require: false
+end
+# previous gems as it was
+
+group :development do
+  # previous gems under this group as it was
+
+  # For linting ERB files
+  gem "erb_lint", require: false, git: "https://github.com/Shopify/erb-lint.git", branch: "main"
+end
