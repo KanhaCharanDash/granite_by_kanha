@@ -84,3 +84,5 @@ group :development do
   gem "erb_lint", require: false, git: "https://github.com/Shopify/erb-lint.git", branch: "main"
 end
 gem "pry-byebug"
+
+gem "data_migrate"
