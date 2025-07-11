@@ -86,3 +86,5 @@ end
 gem "pry-byebug"
 
 gem "data_migrate"
+
+gem "bcrypt", "~> 3.1.13"
